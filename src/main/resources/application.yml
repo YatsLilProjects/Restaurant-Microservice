@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: RESTAURANT-SERVICE
+  config:
+    import: configserver:http://localhost:8085
+server:
+  port: 8082
+
+okta:
+  oauth2:
+    issuer: https://dev-96813037.okta.com/oauth2/default
+    audience: api://default
